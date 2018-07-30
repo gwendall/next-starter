@@ -1,6 +1,7 @@
 import Document, { Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 import { injectGlobal } from 'styled-components';
+import { normalize } from 'polished';
 
 export default class extends Document {
   static getInitialProps({ renderPage }) {
@@ -13,7 +14,7 @@ export default class extends Document {
     return (
       <html>
         <Head>
-          <title>Cinelib</title>
+          <title>Next.js Starter</title>
           <meta
             name="viewport"
             content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
@@ -34,6 +35,8 @@ export default class extends Document {
 }
 
 injectGlobal`
+
+  ${normalize()};
 
 	*,
 	*::before,
@@ -64,6 +67,14 @@ injectGlobal`
 		color: rgba(0, 0, 0, .7);
 		max-width: 100vw;
 		font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-feature-settings: "pnum";
+    font-feature-settings: "pnum";
+    font-variant-numeric: proportional-nums;
 	}
 
 	/* Get rid of gap under images by making them display: inline-block; by default */
