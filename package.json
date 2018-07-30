@@ -1,0 +1,28 @@
+{
+  "name": "next-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^6.1.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "styled-components": "^3.3.3"
+  },
+  "devDependencies": {
+    "babel-plugin-module-resolver": "^3.1.1",
+    "babel-plugin-styled-components": "^1.5.1"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "deploy": "now && now alias"
+  },
+  "author": "Gwendall Esnault <gwendall.esnault@gmail.com>",
+  "homepage": "https://github.com/gwendall/next-starter",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:gwendall/next-starter.git"
+  }
+}
