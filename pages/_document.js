@@ -50,8 +50,6 @@ injectGlobal`
 	html {
 	  width: 100%;
 	  height: 100%;
-	  font-size: 62.5%;
-	  font-size: calc(1em * .625);
 	}
 
 	body {
@@ -63,6 +61,7 @@ injectGlobal`
 	  font-weight: 400;
 	  font-size: 1.5rem;
 	  line-height: 1.4;
+    font-size: calc(112.5% + 0.5vw);
 		background-color: rgb(240, 240, 240);
 		color: rgba(0, 0, 0, .7);
 		max-width: 100vw;
